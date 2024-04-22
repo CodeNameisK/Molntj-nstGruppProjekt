@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <meta name="description" content="Roughly 155 characters">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    /* Stilmall för chatten */
+    #chat-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 200px;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat</h1>
+  <div id="chat-box">
+    
+  </div>
+  <form id="message-form">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message">
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    // Funktion för att skicka meddelanden
+    function sendMessage(message) {
+      // Här kan du implementera kod för att skicka meddelandet till servern
+      // I detta exemplet loggar vi bara meddelandet till konsolen
+      console.log("Message sent: " + message);
+      // Hämta användarens namn från inloggningssessionen eller databasen
+      const userName = "Carlos Brosa"; // Ersätt med kod för att hämta användarens namn
+      // Visa skickat meddelande med användarens namn i chatten
+      displayMessage(userName + ": " + message);
+    }
+
+    // Funktion för att visa meddelanden i chatten
+    function displayMessage(message) {
+      const chatBox = document.getElementById('chat-box');
+      const messageElement = document.createElement('div');
+      messageElement.textContent = message;
+      chatBox.appendChild(messageElement);
+    }
+
+    // Hantera formuläret för att skicka meddelanden
+    document.getElementById('message-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const messageInput = document.getElementById('message');
+      const message = messageInput.value;
+      sendMessage(message);
+      messageInput.value = '';
+    });
+  </script>
+</body>
+</html>

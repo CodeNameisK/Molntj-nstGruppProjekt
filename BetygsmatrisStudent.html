@@ -1,0 +1,92 @@
+<h1>Files</h1>
+
+<br>
+<ul>
+<li>File 1</li>
+<li>File 2</li>
+</ul>
+<br>
+<h2>Chat</h2>
+<button onclick="window.location.href = 'Chat.html';">Chat</button>
+
+
+<br>
+<h1>Betygsmatris</h1>
+<table style="width: 80%;" border="1" cellpadding="1">
+    <tbody>
+    <tr><!-- Labeling för tabellen längst upp -->
+    <td>Uppgift&nbsp;</td>
+    <td>Betyg</td>
+    <td>Kommentar</td>
+    <td>L&auml;mna in</td><!-- "&auml;" är ascii för "ä" -->
+    <td>Sista datum</td>
+    </tr>
+
+    <tr><!-- Här börjar uppgift 1 -->
+    <!-- Namn på uppgiften -->
+    <td>Uppgift 1&nbsp;</td>
+
+    <!-- Betygsfält -->
+    <td width="20"><select name="Betyg">
+        <option selected="selected" value="inte inlämnad">Inte inl&auml;mnad</option>
+        <option value="ig">IG</option>
+        <option value="g">G</option>
+        <option value="vg">VG</option>
+    </select></td>
+
+    <!-- Kommentarsfält -->
+    <td><textarea name="comments" rows="3">Comment</textarea><br /></td>
+
+    <!-- Ladda upp filer -->
+    <td><form>
+        <input type="file" id="myFile" name="filename">
+        <input type="submit"><!-- submit gör ingenting just nu -->
+    </form></td>
+
+      <!-- Datum -->
+    <td><form>
+        <input type="date" id="datum" name="datum">
+    </form></td>
+
+    </tr><!-- Slut på uppgift 1 (rad 2 i tabellen) -->
+
+
+    <tr><!-- Här börjar uppgift 2 (rad 3 i tabellen)-->
+    <td>Uppgift 2&nbsp;</td>
+
+    <td width="20"><select name="Betyg">
+        <option selected="selected" value="inte inlämnad">Inte inl&auml;mnad</option>
+        <option value="ig">IG</option>
+        <option value="g">G</option>
+        <option value="vg">VG</option>
+    </select></td>
+
+    <td><textarea name="comments" rows="3">Comment</textarea><br /></td>
+
+    <td><form>
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+    </form></td>
+
+    <td><form>
+        <input type="date" id="datum" name="datum">
+    </form></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <!-- exempel form:
+
+    <form action="/action.php" method="post">
+        Name: <input name="name" type="text" /> <br /> 
+        Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+        <select name="gender">
+          <option selected="selected" value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br /> 
+        <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+        <textarea cols="20" name="comments" rows="3">Comment</textarea><br />
+        <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
+      <input type="submit" value="Submit" />
+      </form>
+    -->
