@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHomePage</title>
+    <title>My Class Schedule</title>
     <style>
         /* Add your CSS styles here */
         /* This is just a placeholder for demonstration */
@@ -12,6 +12,13 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+        }
+        
+        .banner {
+            background-color: #008080; /* Teal color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
         }
         
         .container {
@@ -33,20 +40,34 @@
         .class-card h2 {
             margin-top: 0;
         }
+        
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
+<div class="banner">
+    <h1>My Class Schedule</h1>
+</div>
+
 <div class="container">
-    <h1>Student Home Page</h1>
-    
     <!-- Class Cards -->
     <div class="class-card">
-        <h2><a href="BetygsmatrisStudent.html">Mathematics</a></h2>
+        <h2>Mathematics</h2>
         <p>Teacher: Mr. Smith</p>
         <p>Time: Monday & Wednesday, 9:00 AM - 10:30 AM</p>
         <p>Room: 101</p>
         <!-- Add more details as needed -->
+        <a href="mathematics.html" class="btn">Go to Class</a>
     </div>
     
     <div class="class-card">
@@ -55,6 +76,7 @@
         <p>Time: Tuesday & Thursday, 10:00 AM - 11:30 AM</p>
         <p>Room: 202</p>
         <!-- Add more details as needed -->
+        <a href="english-literature.html" class="btn">Go to Class</a>
     </div>
     
     <!-- Add more class cards as needed -->
