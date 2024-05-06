@@ -2,85 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Class Schedule</title>
-    <style>
-        /* Add your CSS styles here */
-        /* This is just a placeholder for demonstration */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        
-        .banner {
-            background-color: #008080; /* Teal color */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .class-card {
-            background-color: #e9e9e9;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        
-        .class-card h2 {
-            margin-top: 0;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>My Class</title>
 </head>
 <body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 
-<div class="banner">
-    <h1>My Class Schedule</h1>
-</div>
-
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Help</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 <div class="container">
     <!-- Class Cards -->
     <div class="class-card">
-        <h2>Mathematics</h2>
-        <p>Teacher: Mr. Smith</p>
-        <p>Time: Monday & Wednesday, 9:00 AM - 10:30 AM</p>
-        <p>Room: 101</p>
-        <!-- Add more details as needed -->
-        <a href="mathematics.html" class="btn">Go to Class</a>
-    </div>
-    
-    <div class="class-card">
-        <h2>English Literature</h2>
-        <p>Teacher: Ms. Johnson</p>
-        <p>Time: Tuesday & Thursday, 10:00 AM - 11:30 AM</p>
-        <p>Room: 202</p>
-        <!-- Add more details as needed -->
-        <a href="english-literature.html" class="btn">Go to Class</a>
-    </div>
-    
-    <!-- Add more class cards as needed -->
-    
+        <h2>Classes</h2>
+        <div class="prog1">  <a href="https://www.adobe.com/se/products/photoshop-lightroom.html"></a>    
+          <div></li>
+            <li><div class="virtualbox"><div class="lightroom"></div></div></li></div>
+            <p>Matematik</p>
+            <a href="mathematics.html" class="btn">Till Klass</a>
+        </div>
+        <div class="prog1">  <a href="https://www.adobe.com/se/products/photoshop-lightroom.html"></a>    
+          <div></li>
+            <li><div class="virtualbox"><div class="lightroom"></div></div></li></div>
+            <p>Engelska</p>
+            <a href="mathematics.html" class="btn">Till Klass</a>
+        </div>
+        <div class="prog1">  <a href="https://www.adobe.com/se/products/photoshop-lightroom.html"></a>    
+          <div></li>
+            <li><div class="virtualbox"><div class="lightroom"></div></div></li></div>
+            <p>System</p>
+            <a href="mathematics.html" class="btn">Till Klass</a>
+        </div>
+        <div class="prog1">  <a href="https://www.adobe.com/se/products/photoshop-lightroom.html"></a>    
+          <div></li>
+            <li><div class="virtualbox"><div class="lightroom"></div></div></li></div>
+            <p>Fysik</p>
+            <a href="mathematics.html" class="btn">Till Klass</a>
+        </div>
+      </div>
 </div>
 
 </body>
